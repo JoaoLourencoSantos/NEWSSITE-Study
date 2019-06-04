@@ -1,0 +1,405 @@
+*{
+    margin:0px;
+    padding:0px;
+    border:0px;
+}
+body{
+    width: 100%;
+    height:100vh;
+    color:black;
+}
+
+a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color:rgba(10, 10, 10,.9);     
+}
+.importante>.texto-dentro a:hover{
+    color:rgba(250, 250, 250,.8);   
+    transition: 0.1s;
+}
+a:hover{
+    text-decoration: none;
+    transition: 0.5s;
+    color:rgba(66, 4, 1, .9);
+}
+
+
+/*<<<<<<<<<<<< CABEÇALHO 1 >>>>>>>>>>>>>*/
+.cabecalho .menu{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.cabecalho .menu>.itens-menu {
+    color:black;
+    list-style: none;
+    margin: 1%;
+}
+.cabecalho .menu>.itens-menu:hover {
+    text-decoration:underline;
+}
+/*<<<<<<<<<<<< CABEÇALHo 2 >>>>>>>>>>>>>*/
+.cabecalho div.menu-dois {
+    width: 100%;
+    height: 40%;
+    /*<<<<<<<<<<<< Efeito mini paralax>>>>>>>>>>>>>*/
+    background-image: url("../imagens/fundo2.jpg");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    /*<<<<<<<<<<<< Fim efeito mini paralax>>>>>>>>>>>>>*/
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color:#fff;
+}
+
+/*<<<<<<< Logo e Titulo>>>>>>>>*/
+.cabecalho div.menu-dois .logo-titulo{
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    width:100%;
+    height:90%;
+}
+.cabecalho div.menu-dois .logo-titulo:nth-child(1){
+    width:80%;
+    height:100%;
+    border-bottom:3px solid white;  
+}
+/*<<<<<<< Titulo>>>>>>>>*/
+.cabecalho div.menu-dois .logo-titulo .item-logo {
+    width: 100%;
+}
+.cabecalho div.menu-dois .logo-titulo .item-logo #titulo{
+    font-size:2.5em;
+}
+/*<<<<<<< Logo>>>>>>>>*/
+.cabecalho .menu-dois div .logon {
+    width:25%;
+    height:40%;
+    font-size:1.2rem;
+    margin:0 auto;
+}
+/*<<<<<<< SEGUNDO MENU >>>>>>>>*/
+/*<<<<<<< Nav pai >>>>>>>>*/
+.cabecalho .menu-dois nav{
+    width: 100%;
+    height:20%;
+    padding:0px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*<<<<<<< Itens >>>>>>>>*/
+.cabecalho .menu-dois nav>a.itens-menu2{
+    color:black;
+    width: 50%;
+    text-align: center;
+    margin:1.5%;
+    list-style: none;
+    font-size: 1.3em;
+    background: white;
+}
+.cabecalho .menu-dois nav a:hover{
+    background:rgba(0, 0, 0,0.5);
+    transition-duration: 0.2s;
+}
+.cabecalho .menu-dois nav>a.itens-menu2:hover{
+    color:#ffffff;
+}
+
+
+/*<<<<<<< ASIDE >>>>>>>>*/
+aside.destaques{
+    margin:0 auto;
+    margin:5% 0% 5% 0% ;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+aside.destaques>section{
+    margin:0 auto;
+    margin-top:5%;
+    margin-bottom:5%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    text-align:center;
+    width:88%;
+}
+aside>section>div{
+    margin:0 auto;
+    margin-bottom:5%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height:20%;
+    border-radius: 0px  0px  5px  0px;
+}
+aside>section>a>div.destaques-parcerias{
+    width:100%;
+    height:10%;
+}
+aside>section>div.destaques-noticias{
+    border-bottom:3px solid rgba(0,0,0,0.5);
+    border-right:3px solid rgba(0,0,0,0.5);
+
+}
+aside.destaques>header{
+    width:87.5%;
+    box-shadow:0px 3px rgba(0,0,0,0.5);
+    border:1px  1px 1px 1px solid #000;
+}
+aside>section>div.destaques-parcerias img{
+    width:100%;
+    height:10%;
+    box-shadow:4px 5px rgba(0,0,0,0.5);
+    border-radius: 0px  0px  5px  0px;
+}
+
+
+
+/*<<<<<<< FOOTER>>>>>>>>*/
+footer{
+    background: rgba(66, 4, 1, 0.836);
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    overflow: auto;
+    list-style: none;
+    height:10%;
+}
+footer>figure{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items:center; 
+}
+
+
+
+/*<<<<<<< NOTICIAS>>>>>>>>*/
+/*<<<<<<< corpo das noticias >>>>>>>>*/
+.content>.noticias{
+    width: 100%;
+    height: 100%;
+}
+/*<<<<<<< Base para as duas partes, importante e secundárias >>>>>>>>*/
+.div-noticia{
+    width: 90% ;
+    height: 80%;
+    margin:0 auto;
+    background: none;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    border-radius:  10px 10px;
+    margin-bottom:1%;
+    padding: 1%;
+}
+/*<<<<<<< noticia principal >>>>>>>>*/
+main.content>section.noticias>div.importante{
+    position :relative;
+    margin-top:1%;
+    width: 98%;
+    height: 80%;
+    border-radius:0px  0px  0px  0px; 
+    background:none;
+}
+main.content>section.noticias>div.importante img{
+    margin:0px;
+    padding:0px;
+    z-index:1;
+    width: 100%;
+    height:.100%;
+    border-radius:0px  0px  0px  0px; 
+}
+
+main.content>section.noticias>div.importante>div.texto-dentro{
+    position: absolute;
+    color:rgba(10, 10, 10,.8);
+    width: 80%;
+    height: 10%;
+    align-items: center;
+    font-size: 2em;
+    text-align: left;
+    z-index:2;
+    padding-top:25%; 
+}
+
+
+
+
+/*<<<<<<< Noticias Secundárias >>>>>>>>*/
+.div-noticia img{
+    border-radius:  20px 20px;
+    box-shadow: 8px 8px 6px rgba(50,50,50,0.5);
+    width:100%;
+    height:100%;
+}
+
+
+
+/*<<<<<<< Medias  >>>>>>>>*/ 
+@media screen and (min-width: 400px) {
+    main.content>section.noticias>div.importante .texto-dentro{
+        font-size: 2em;
+    }
+}
+
+
+@media screen and (min-width: 650px) {
+    /*NOTICIAS*/
+    .div-noticia.secundarias{
+        margin:2% auto;
+        width:80%;
+        height:90%;
+        display:flex;
+        flex-direction:row;
+        align-items: center;    
+    }
+    .div-noticia.secundarias a div.imagem-noticia{
+        display:flex;
+        flex-direction: row;
+        padding: 1%;
+        width: 50%;
+        height: 100%;        
+    }
+    .div-noticia.secundarias a div.imagem-noticia img{
+        margin:3% auto;
+        width: 50%;
+        height:100%;    
+    }
+    .div-noticia.secundarias a div.imagem-noticia div{
+        
+        text-align: justify;
+        margin:2% auto;
+        width: 100%;
+        height:40%;    
+    }
+    /*CABEÇALHO*/
+        
+    /*<<<<<<< SEGUNDO MENU >>>>>>>>*/
+    /*<<<<<<< Nav pai >>>>>>>>*/
+    .cabecalho .menu-dois nav{
+        width: 100%;
+        height:20%;
+        padding:0px;
+        margin:0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    /*<<<<<<< Itens >>>>>>>>*/
+    .cabecalho .menu-dois nav a.itens-menu2{
+        color:black;
+        width: 100%;
+        text-align: center;
+        margin:0.5%;
+        font-size: 1.1em;
+    }
+    /*<<<<<<< Titulo>>>>>>>>*/
+    .cabecalho div.menu-dois .logo-titulo .item-logo #titulo{
+        font-size:3.5em;
+    }
+    
+    /*<<<<<<< ASIDE>>>>>>>>*/
+    aside.destaques{
+        margin:1% 0% 5% 0% ;
+        width:100%;
+        height:100%;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    main{
+        display: flex;
+        flex-direction: row;
+        padding-top: 2%;
+    } 
+    main.content>section.noticias{
+        flex-wrap: nowrap;
+        width: 100%;
+    }    
+    main.content>aside.destaques{
+        flex-wrap: nowrap;
+        width: 50%;
+    }  
+    /*secundárias*/ 
+    .sec-secundarias{
+        display: flex;
+        flex-direction: row; 
+    }
+    .div-noticia.secundarias{
+        margin:2%;
+    }
+    .div-noticia.secundarias a div.imagem-noticia{
+        display:flex;
+        flex-direction:column ;  
+        margin:0 auto;    
+        width: 100%;
+        height: 100%;
+       
+    }
+    .div-noticia.secundarias a div.imagem-noticia img{
+        margin:2% auto;
+        width: 100%;
+        height: 40vh;   
+    }
+    .div-noticia.secundarias a div.imagem-noticia div{
+        margin:0 auto;
+        width: 100%;
+        height:1%;    
+    }
+
+
+       /*CABEÇALHO*/
+    
+    /*<<<<<<< SEGUNDO MENU >>>>>>>>*/
+    /*<<<<<<< Nav pai >>>>>>>>*/
+    .cabecalho .menu-dois nav{
+        width: 80%;
+        height:50%;
+        padding:0px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    /*<<<<<<< Itens >>>>>>>>*/
+    .cabecalho .menu-dois nav a.itens-menu2{
+        color:rgb(51, 36, 36);
+        width:100%;
+        text-align: center;
+        margin:0.5%;
+        font-size: 1.2em;
+    }
+    /*<<<<<<< Titulo>>>>>>>>*/
+    .cabecalho div.menu-dois .logo-titulo .item-logo #titulo{
+        font-size:5.5em;
+    }
+}
+
+
+
+
+
+
+
+
